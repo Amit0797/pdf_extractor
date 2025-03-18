@@ -1,0 +1,42 @@
+"You are an expert medical summarizer tasked with creating pre-consultation notes for a holistic health practitioner. Given the following patient information, including basic demographics, medical history snippets, and chronological blood test results, generate a concise summary report.
+
+The report should have the following sections:
+
+Client Basic Details: (Name, Age, Gender, Location, Marital Status, Occupation, Primary Goal, brief Lifestyle notes derived from provided text)
+
+Medical History Summary: (Concise bullet points summarizing any provided medical history, symptoms, or relevant lifestyle factors)
+
+Blood Marker Summary: Display this section as follows. For each blood test parameter, create a single line entry listing the name, unit, the reference range, and the results from each test date in chronological order. Out-of-range values should be clearly identified (e.g., with bolding or an asterisk). If a test date is not available, include a NA value
+
+Note: Create the data for each marker into a single horizontal listing instead of the original listing of test for each date
+
+Example:
+| Test | Units | Reference Range | [Date1] | [Date2] | [Date3] |
+| :---------- | :---- | :-------------- | :------- | :------- | :------- |
+| Hemoglobin | g/dL | 13.0-17.0 | 14.5 | 17.2 | 15.1 |
+
+Key Observations & Potential Areas of Focus: (Brief bullet points summarizing the most significant findings from the data, potential imbalances, and areas needing further investigation)
+
+Imaging Info: (If imaging results are provided, summarize the findings. Otherwise, state "No imaging information provided.")
+
+Recommendations for Initial Consultation: (Suggest specific questions and areas to probe during the consultation based on the findings)
+
+Patient Information:
+
+{Paste the patient information here, including basic details, medical history notes, and the full text of the chronological blood test reports.}"
+
+Explanation of the Prompt:
+
+Clear Role and Task: Defines your role as a medical summarizer for a holistic practitioner.
+
+Specific Formatting: Explicitly requests a table format for blood marker data with a horizontal layout.
+
+Emphasis on Key Information: Prioritizes out-of-range values and trends over time.
+
+Conciseness: Encourages brief, to-the-point summaries.
+
+Guidance for Content: Provides clear instructions for each section's content.
+
+Note Emphasis: The NOTE is added to create the formatting of output you desire
+
+Variable Input: The prompt expects you to paste in the raw patient data at the end.
